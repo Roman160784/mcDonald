@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     box: {
         width: '30%',
         marginBottom: 10,
-        borderRadius: 10,
+        borderRadius: 20,
         borderColor: 'black',
         backgroundColor: 'white',
         borderWidth: 2, 
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     activeBox: {
         width: '30%',
         marginBottom: 10,
-        borderRadius: 10,
+        borderRadius: 20,
         borderColor: 'black',
         backgroundColor: 'red',
         borderWidth: 2,
