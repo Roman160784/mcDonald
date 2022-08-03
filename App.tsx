@@ -7,7 +7,7 @@ import { Popular } from './src/comonets/Popular';
 
 export default function App() {
   return (
-    
+
     <View style={styles.container}>
       <Header/>
       <Categories/>
@@ -23,5 +23,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 50,
     padding: 24,
+    
   },
 });
