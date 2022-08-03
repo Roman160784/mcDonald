@@ -15,7 +15,7 @@ export const Categories = () => {
             <View style={styles.categoryBlock}>
                 {category.map((el, ind) => (
 
-                    <View style={ activeIndex === ind ? styles.activeBox : styles.box }>
+                    <View key={`el${ind}`} style={ activeIndex === ind ? styles.activeBox : styles.box }>
 
                         <TouchableOpacity onPress={() => setActiveIndex(ind)}>
                             <View style={styles.categoryBox }>
@@ -33,7 +33,7 @@ export const Categories = () => {
 
 const styles = StyleSheet.create({
     categories: {
-        paddingTop: 60,
+        paddingTop: 30,
     },
     title: {
         fontSize: SIZES.h2,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     },
     pict: {
         width: 70,
-        height: 70,
+        height: 60,
         
     },
     categoryName: {
@@ -59,17 +59,17 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-between',
-        marginTop: 20,
+        marginTop: 10,
     },
     box: {
         width: '30%',
-        marginBottom: 20,
-        borderRadius: 20,
+        marginBottom: 10,
+        borderRadius: 10,
         borderColor: 'black',
         backgroundColor: 'white',
         borderWidth: 2, 
-        paddingTop: 10,
-        paddingBottom: 10,
+        paddingTop: 5,
+        paddingBottom: 5,
         justifyContent: 'center',
     },
     categoryBox: {
@@ -77,13 +77,13 @@ const styles = StyleSheet.create({
     },
     activeBox: {
         width: '30%',
-        marginBottom: 20,
-        borderRadius: 20,
+        marginBottom: 10,
+        borderRadius: 10,
         borderColor: 'black',
         backgroundColor: 'red',
         borderWidth: 2,
-        paddingTop: 10,
-        paddingBottom: 10,
+        paddingTop: 5,
+        paddingBottom: 5,
         justifyContent: 'center', 
     },
 });
